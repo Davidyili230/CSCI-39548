@@ -25,7 +25,7 @@ Create a simple restaurant website with a menu, gallery, and contact page.
 6. **Contact Page**  
    - Include:  
      - [x] A Google Map showing the restaurant’s location.  
-     - [ ] A contact form with Name, Email, and Message fields.
+     - [x] A contact form with Name, Email, and Message fields.
 
 7. **Footer Section (10 points)**  
    - [ ] Add social media links (Facebook, Instagram, etc.) and business hours.
