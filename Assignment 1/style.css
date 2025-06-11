@@ -3,7 +3,7 @@
 ================================================================================================================================================================================ */
 body {
     margin: 0;
-    padding: 10px 50px;
+    padding: 40px 80px;
     background-color: #1c1c1b;
     font-family: Arial, sans-serif;
 }
@@ -13,6 +13,11 @@ main {
     flex-direction: column;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 body, nav {
     height: 100%;
     background-image: url('img/banner.jpg');
@@ -20,7 +25,7 @@ body, nav {
     background-attachment: fixed;
     background-size: cover; /* or use '100% 100%' if you prefer stretching */
     background-position: center;
-    border: 2px solid white;
+     
 }
 
 #restaurantName {
@@ -30,7 +35,7 @@ body, nav {
     font-size: 4rem;
     font-weight: bolder;
     letter-spacing: 0.3rem;
-    border: 2px solid white;
+     
 }
 
 #restaurantDescription {
@@ -39,7 +44,7 @@ body, nav {
     font-family: cursive;
     letter-spacing: 1.5px;
     font-size: 1.5rem;
-    border: 2px solid white;
+     
     width: 60%;
 }
 
@@ -95,6 +100,35 @@ nav {
     text-align: start;
 }
 
+/* ===============================================================================================================================================================================
+                        Card
+================================================================================================================================================================================ */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+  
+.card {
+    color: white;
+    width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+  
+.card img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+  
+  
+  
 /* ===============================================================================================================================================================================
                         Phone
 ================================================================================================================================================================================ */
