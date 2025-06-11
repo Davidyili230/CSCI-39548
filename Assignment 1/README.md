@@ -28,7 +28,7 @@ Create a simple restaurant website with a menu, gallery, and contact page.
      - [x] A contact form with Name, Email, and Message fields.
 
 7. **Footer Section (10 points)**  
-   - [ ] Add social media links (Facebook, Instagram, etc.) and business hours.
+   - [x] Add social media links (Facebook, Instagram, etc.) and business hours.
 
 ## Part 2: Mobile-Friendly Design
 
