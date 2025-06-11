@@ -1,0 +1,23 @@
+/* ========== Global CSS Reset ========== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Optional: set base font and line height */
+html {
+  font-size: 16px; /* base font size for rem units */
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+/* Optional: body base style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
