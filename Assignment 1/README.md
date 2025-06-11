@@ -20,11 +20,11 @@ Create a simple restaurant website with a menu, gallery, and contact page.
    - [x] The images in the gallery should be displayed as a slider.
 
 5. **About Section**  
-   - [ ] Write a short story about the restaurant (e.g., history, special dishes, or mission).
+   - [x] Write a short story about the restaurant (e.g., history, special dishes, or mission).
 
 6. **Contact Page**  
-   - [ ] Include:  
-     - [ ] A Google Map showing the restaurant’s location.  
+   - Include:  
+     - [x] A Google Map showing the restaurant’s location.  
      - [ ] A contact form with Name, Email, and Message fields.
 
 7. **Footer Section (10 points)**  
