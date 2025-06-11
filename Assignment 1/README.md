@@ -13,11 +13,11 @@ Create a simple restaurant website with a menu, gallery, and contact page.
    - [x] Include a large banner image with the restaurant’s name displayed clearly.
 
 3. **Menu Page**  
-   - [ ] Create a structured menu using tables or cards to display food items and prices.
+   - [x] Create a structured menu using tables or cards to display food items and prices.
 
 4. **Image Gallery**  
-   - [ ] Show at least six pictures of food or the restaurant interior.  
-   - [ ] The images in the gallery should be displayed as a slider.
+   - [x] Show at least six pictures of food or the restaurant interior.  
+   - [x] The images in the gallery should be displayed as a slider.
 
 5. **About Section**  
    - [ ] Write a short story about the restaurant (e.g., history, special dishes, or mission).
