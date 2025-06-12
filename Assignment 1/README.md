@@ -32,8 +32,8 @@ Create a simple restaurant website with a menu, gallery, and contact page.
 
 ## Part 2: Mobile-Friendly Design
 
-- [ ] Make sure the website works well on phones and tablets (use CSS media queries).  
-- [ ] Hint: Make use of hamburger menus and stacking.
+- [x] Make sure the website works well on phones and tablets (use CSS media queries).  
+- [x] Hint: Make use of hamburger menus and stacking.
 
 ---
 
@@ -43,4 +43,4 @@ Create a simple restaurant website with a menu, gallery, and contact page.
 
 ## Submission
 
-- [ ] Find any free hosting sites to host your application and submit the links to the hosted web pages.
+- [x] Find any free hosting sites to host your application and submit the links to the hosted web pages.
