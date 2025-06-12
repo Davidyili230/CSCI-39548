@@ -20,14 +20,21 @@
     <body>
         <header>
             <nav>
-                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="" width="300px"></a></div>
-                <ul class="nav-links">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="" width="300px"></a>
+                </div>
+          
+                <ul class="nav-links" id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button class="order-btn"><a href="menu.html">Order Now</a></button>
+          
+                <div class="nav-right">
+                    <a class="order-btn" href="menu.html">Order Now</a>
+                    <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
+                </div>
             </nav>
         </header>
 
@@ -37,17 +44,17 @@
             <button class="order-btn" id="index-order-btn"><a href="menu.html">Order Now</a></button>
 
             <div class="slider-container">
-                <button class="btn prev">&#10094;</button>
+                <button class="btn prev" aria-label="Previous Slide">&#10094;</button>
                 <div class="slider">
-                  <img src="card-item/cheese.png" alt="Gallery Image 1">
-                  <img src="card-item/basil.png" alt="Gallery Image 2">
-                  <img src="card-item/hawaiian.webp" alt="Gallery Image 3">
-                  <img src="card-item/meat.webp" alt="Gallery Image 4">
-                  <img src="card-item/pepperoni.png" alt="Gallery Image 5">
-                  <img src="card-item/veg.webp" alt="Gallery Image 6">
+                    <img src="card-item/basil.png" alt="Basil" />
+                    <img src="card-item/hawaiian.webp" alt="Hawaiian" />
+                    <img src="card-item/cheese.png" alt="Cheese" />
+                    <img src="card-item/meat.webp" alt="Meat Lover" />
+                    <img src="card-item/pepperoni.png" alt="Pepperoni" />
+                    <img src="card-item/veg.webp" alt="Veggie" />
                 </div>
-                <button class="btn next">&#10095;</button>
-              </div>
+                <button class="btn next" aria-label="Next Slide">&#10095;</button>
+            </div>
               
         </main>
 
