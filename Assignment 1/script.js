@@ -71,11 +71,21 @@ document.querySelectorAll(".add-to-cart").forEach(button => {
     const price = parseFloat(button.dataset.price);
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.push({ name, price });
+
+    // Check if item already exists in cart
+    const existingItem = cart.find(item => item.name === name);
+
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cart.push({ name, price, quantity: 1 });
+    }
+
     localStorage.setItem("cart", JSON.stringify(cart));
     alert(`${name} added to cart`);
   });
 });
+
 
 function renderCart() {
   const cartItems = document.getElementById("cart-items");
@@ -88,14 +98,26 @@ function renderCart() {
   cart.forEach((item, index) => {
     const div = document.createElement("div");
     div.innerHTML = `
-      ${item.name} - $${item.price.toFixed(2)}
+      <strong>${item.name}</strong> - $${item.price.toFixed(2)} x 
+      <input type="number" value="${item.quantity}" min="1" data-index="${index}" class="qty-input" />
+      = $${(item.price * item.quantity).toFixed(2)}
       <button onclick="removeItem(${index})">Remove</button>
     `;
     cartItems.appendChild(div);
-    total += item.price;
+    total += item.price * item.quantity;
   });
 
   totalPriceEl.textContent = total.toFixed(2);
+
+  // Listen for quantity changes
+  document.querySelectorAll(".qty-input").forEach(input => {
+    input.addEventListener("change", (e) => {
+      const i = e.target.dataset.index;
+      cart[i].quantity = Math.max(1, parseInt(e.target.value));
+      localStorage.setItem("cart", JSON.stringify(cart));
+      renderCart(); // Refresh cart
+    });
+  });
 }
 
 function removeItem(index) {
