@@ -11,14 +11,18 @@ main {
     display: flex;
     flex-direction: column;
     color: white;
-    height: 90vh;
+    height: 100%;
     font-family: cursive;
 }
 
-a {
+a, h1, p {
     color: white;
     text-decoration: none;
     font-family: cursive;
+}
+
+center {
+    color: white;
 }
 
 body, nav {
@@ -48,6 +52,9 @@ body, nav {
     width: 60%;   
 }
 
+button {
+    padding: 0.1rem 0.3rem;
+}
 /* ===============================================================================================================================================================================
                         NAVIGATION BAR
 ================================================================================================================================================================================ */
@@ -317,6 +324,55 @@ footer {
     margin: 0;
 }
   
+#cart-items {
+    max-width: 600px;
+    margin: 20px auto;
+    background: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    color: white;
+}
+  
+#cart-items div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+  
+#cart-items button {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+#cart-items button:hover {
+    background-color: #d9534f;
+}
+  
+#total-price {
+    font-weight: bold;
+}
+  
+#clear-cart {
+    display: block;
+    margin: 20px auto;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+  
+#clear-cart:hover {
+    background-color: #212529;
+}
+
 /* ===============================================================================================================================================================================
                         Phone
 ================================================================================================================================================================================ */
