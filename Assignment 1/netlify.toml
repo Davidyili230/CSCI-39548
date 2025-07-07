@@ -1,0 +1,4 @@
+[build]
+  base = "cravers-pizza"
+  command = "npm run build"
+  publish = "build"
